@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About · Parthey Productions</title>
+<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Parthey <em>Productions</em></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="france.html">France</a></li>
+    <li><a href="brazil.html">Brazil</a></li>
+    <li><a href="journey.html">Two-Continent</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('../images/dinner_outside.jpg'); background-position: center 55%;"></div>
+  <div class="page-hero-content">
+    <span class="page-eyebrow">Who We Are</span>
+    <h1 class="page-title">Louis Abelman &amp;<br><em>Sarah Pusch Nogueira</em></h1>
+  </div>
+</div>
+
+<section style="padding: 5rem 0;">
+  <div class="container-narrow">
+
+    <div class="prose reveal">
+      <p>Parthey Productions is a cultural production company founded by Louis Abelman and Sarah Pusch Nogueira, based in Florianópolis, Brazil, with deep roots in Franche-Comté, France and active networks across the northeastern United States.</p>
+      <p>We are documentary filmmakers, teachers, and makers — and the travel experiences we offer are an extension of the same work. Every experience we produce, whether a film, a week at the chateau, a workshop, or a residency, emerges from a single perspective: ecological literacy and genuine cultural engagement with the places and people we encounter.</p>
+    </div>
+
+    <div class="divider" style="margin:3rem 0;"></div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;" class="reveal">
+      <div>
+        <span class="section-label" style="text-align:left;padding:0;display:block;margin-bottom:1rem;">Louis Abelman</span>
+        <div class="prose">
+          <p>Documentary filmmaker, translator, and educator based between Florianópolis and Franche-Comté. Louis has family roots at Chateau de Parthey going back generations, and a working relationship with the land and the people who tend it that informs everything Parthey Productions does. His networks span France, the United States, and Brazil.</p>
+        </div>
+      </div>
+      <div>
+        <span class="section-label" style="text-align:left;padding:0;display:block;margin-bottom:1rem;">Sarah Pusch Nogueira</span>
+        <div class="prose">
+          <p>Brazilian filmmaker, artist, and educator working across documentary film, fiction, theatre, dance, and sculpture. Sarah's deep roots in Brazilian culture and her active engagement with the artistic and ecological communities of Florianópolis are the foundation of Parthey Productions' Brazil work. She holds the company's Brazilian legal identity.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider" style="margin:3rem 0;"></div>
+
+    <div class="prose reveal" style="text-align:center;">
+      <p>We are not intermediaries packaging a place for outside consumption. We live in and belong to the places we work with — the chateau and its farm in the Jura, the island city and its food networks in Santa Catarina. That belonging is what makes the experiences we offer genuine rather than staged.</p>
+      <p>The production company is the frame that holds it together. Films, experiences, workshops, residencies — all of them expressions of the same commitment to ecological and cultural literacy in a world that is losing both faster than it knows.</p>
+    </div>
+
+  </div>
+</section>
+
+<div class="photo-strip three reveal">
+  <img src="../images/staircase.jpg" alt="The entrance staircase at Parthey">
+  <img src="../images/crest.jpg" alt="Heraldic crest" style="object-fit:cover;">
+  <img src="../images/tower_bedroom.jpg" alt="The tower bedroom">
+</div>
+
+<section class="closing-section">
+  <div class="closing-inner reveal">
+    <h2 class="closing-title">Work With Us</h2>
+    <p class="closing-body">Whether you are looking for an experience, a collaboration, a residency, or a conversation — we would like to hear from you.</p>
+    <a href="contact.html" style="font-family:'Jost',sans-serif;font-weight:300;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--forest);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px;">Get in Touch →</a>
+  </div>
+</section>
+
+<footer>
+  <ul class="footer-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="france.html">France</a></li>
+    <li><a href="brazil.html">Brazil</a></li>
+    <li><a href="journey.html">Two-Continent</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p>Parthey Productions &nbsp;·&nbsp; A production company with an ecological and culturally literate perspective</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach((e,i) => { if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('visible'),i*80); obs.unobserve(e.target); } });
+  }, {threshold:0.1, rootMargin:'0px 0px -40px 0px'});
+  reveals.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
