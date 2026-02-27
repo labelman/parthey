@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · Parthey Productions</title>
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  .contact-section { padding: 6rem 2rem; }
+  .contact-grid {
+    max-width: 900px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start;
+  }
+  @media (max-width: 680px) { .contact-grid { grid-template-columns: 1fr; gap: 3rem; } }
+
+  .contact-intro .section-title { text-align: left; margin-bottom: 1.5rem; }
+  .contact-intro .section-label { text-align: left; }
+  .contact-intro .prose { margin-top: 1rem; }
+
+  .contact-details { padding-top: 0.5rem; }
+  .contact-block + .contact-block { margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid rgba(44,74,53,0.12); }
+  .contact-block-label {
+    font-family: 'Jost', sans-serif; font-weight: 200; font-size: 0.65rem;
+    letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold);
+    display: block; margin-bottom: 0.75rem;
+  }
+  .contact-block-name {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400;
+    color: var(--forest); display: block; margin-bottom: 0.3rem;
+  }
+  .contact-block-detail {
+    font-family: 'Jost', sans-serif; font-size: 0.82rem; font-weight: 300;
+    color: var(--mid); display: block; line-height: 1.8;
+  }
+  .contact-block-detail a { color: var(--forest); text-decoration: none; border-bottom: 1px solid rgba(44,74,53,0.2); }
+  .contact-block-detail a:hover { border-bottom-color: var(--gold); color: var(--gold); }
+
+  .form-group { margin-bottom: 1.5rem; }
+  .form-group label {
+    font-family: 'Jost', sans-serif; font-weight: 200; font-size: 0.68rem;
+    letter-spacing: 0.25em; text-transform: uppercase; color: var(--mid);
+    display: block; margin-bottom: 0.5rem;
+  }
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    background: var(--parchment);
+    border: 1px solid rgba(44,74,53,0.15);
+    padding: 0.85rem 1rem;
+    font-family: 'Jost', sans-serif; font-weight: 300; font-size: 0.9rem; color: var(--ink);
+    outline: none; appearance: none;
+    transition: border-color 0.3s;
+  }
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    border-color: var(--gold);
+  }
+  .form-group textarea { height: 140px; resize: vertical; }
+  .form-submit {
+    font-family: 'Jost', sans-serif; font-weight: 300; font-size: 0.75rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    background: var(--forest); color: var(--cream);
+    border: none; padding: 1rem 2.5rem; cursor: pointer;
+    transition: background 0.3s;
+  }
+  .form-submit:hover { background: var(--moss); }
+  .form-note {
+    font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; font-style: italic;
+    color: var(--light); margin-top: 1rem; display: block;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Parthey <em>Productions</em></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="france.html">France</a></li>
+    <li><a href="brazil.html">Brazil</a></li>
+    <li><a href="journey.html">Two-Continent</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav-hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="page-hero" style="min-height:40vh;">
+  <div class="page-hero-bg" style="background-image: url('../images/postcard2.jpg'); background-position: center; filter: brightness(0.35) sepia(0.3);"></div>
+  <div class="page-hero-content">
+    <span class="page-eyebrow">We'd like to hear from you</span>
+    <h1 class="page-title">Begin a <em>Conversation</em></h1>
+  </div>
+</div>
+
+<section class="contact-section">
+  <div class="contact-grid">
+
+    <div class="contact-intro reveal">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="section-title" style="font-size:clamp(1.8rem,4vw,2.8rem);">We don't take bookings before we talk.</h2>
+      <div class="prose">
+        <p>Every experience we offer is built around relationship — with place, with the people in it, and with you. Tell us who you are, what draws you here, and what you're looking for. We'll respond personally.</p>
+      </div>
+
+      <div class="contact-details" style="margin-top:3rem;">
+        <div class="contact-block">
+          <span class="contact-block-label">Louis Abelman</span>
+          <span class="contact-block-name">Florianópolis &amp; Franche-Comté</span>
+          <span class="contact-block-detail">
+            <!-- Add email here -->
+            louis@partheyprod.com
+          </span>
+        </div>
+        <div class="contact-block">
+          <span class="contact-block-label">Sarah Pusch Nogueira</span>
+          <span class="contact-block-name">Florianópolis, Brazil</span>
+          <span class="contact-block-detail">
+            <!-- Add email here -->
+            sarah@partheyprod.com
+          </span>
+        </div>
+        <div class="contact-block">
+          <span class="contact-block-label">Based in</span>
+          <span class="contact-block-detail">
+            Florianópolis, Santa Catarina, Brazil<br>
+            Choisey, Jura, France<br>
+            New York / Philadelphia, USA
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <form action="mailto:louis@partheyprod.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="How shall we address you?">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="interest">I am interested in</label>
+          <select id="interest" name="interest">
+            <option value="">— Select —</option>
+            <option>The Comté Immersion (France)</option>
+            <option>Jura Landscape &amp; Culture (France)</option>
+            <option>Private Retreat at the Chateau</option>
+            <option>Artist / Researcher Residency</option>
+            <option>Florianópolis Agroecological (Brazil)</option>
+            <option>Documentary Immersion (Brazil)</option>
+            <option>The Two-Continent Journey</option>
+            <option>Something else / not sure yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell us about yourself and what you're looking for</label>
+          <textarea id="message" name="message" placeholder="Who are you, what draws you to this, what are you hoping to experience or understand..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+        <span class="form-note">We respond to every inquiry personally, usually within 48 hours.</span>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <ul class="footer-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="france.html">France</a></li>
+    <li><a href="brazil.html">Brazil</a></li>
+    <li><a href="journey.html">Two-Continent</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p>Parthey Productions &nbsp;·&nbsp; A production company with an ecological and culturally literate perspective</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach((e,i) => { if(e.isIntersecting){ setTimeout(()=>e.target.classList.add('visible'),i*80); obs.unobserve(e.target); } });
+  }, {threshold:0.1, rootMargin:'0px 0px -40px 0px'});
+  reveals.forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
